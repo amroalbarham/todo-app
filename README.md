@@ -14,7 +14,8 @@
 
 ### Linkd 
 
-[https://github.com/amroalbarham/todo-app/compare/context-settings%E2%80%99?expand=1](https://github.com/amroalbarham/todo-app/compare/context-settings%E2%80%99?expand=1)
+[pull request](https://github.com/amroalbarham/todo-app/compare/context-settings%E2%80%99?expand=1)
+[SandBox](https://codesandbox.io/s/silly-leaf-wgcqd)
 
 
 ### UML
