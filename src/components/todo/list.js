@@ -8,10 +8,8 @@ function TodoList(props) {
   const [list,setList] = useState([]);
   useEffect(()=>{
     if(settingsContext.view){
-
       setList(listContext.list)
     }else{
-
       let temp = [];
       temp = listContext.list.filter((item)=>{
         if(!item.complete){
@@ -22,11 +20,9 @@ function TodoList(props) {
     }
   },[])
   useEffect(()=>{
-
     if(settingsContext.view){
       setList(listContext.list)
     }else{
-
       let temp = [];
       temp = listContext.list.filter((item)=>{
         if(!item.complete){
@@ -35,7 +31,7 @@ function TodoList(props) {
       })
       setList(temp);
     }
-  },[settingsContext.view])
+  },[listContext.list])
   function nextPage(){
     settingsContext.nextpage();
     setpage(page+1);
@@ -45,13 +41,10 @@ function TodoList(props) {
     setpage(page-1);
   }
   function modifyList(id){
-
     listContext.toggleComplete(id);
     if(settingsContext.view){
       setList(listContext.list)
-
     }else{
-
       let temp = [];
       temp = listContext.list.filter((item)=>{
         if(!item.complete){
@@ -62,7 +55,6 @@ function TodoList(props) {
     }
   }
   return (
-
     <>
     <ul>
       {list.map((item,idx) => {
@@ -82,8 +74,7 @@ function TodoList(props) {
     </ul>
     {page>0&&<button onClick={prePage}>prev</button>}
     {!(page==(Math.ceil(listContext.list.length/settingsContext.numberOfItems)-1))&&<button onClick={nextPage}>next</button>}
-    <button onClick={()=>{settingsContext.setSettings(null,!settingsContext.view)}}>view</button>
-    
+    {/* <button onClick={()=>{settingsContext.setSettings(null,!settingsContext.view)}}>view</button> */}
     </>
   );
 }
