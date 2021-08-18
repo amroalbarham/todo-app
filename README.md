@@ -6,7 +6,7 @@ Incorporate configuration settings to the application.
 
 > Provide “next” and “previous” links to let the users navigate a long list of items
 
-> Hide or show completed items in the list
+> Hide or show completed items in the list.
 
 
 ## sandbox Link
