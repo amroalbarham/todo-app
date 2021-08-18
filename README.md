@@ -8,10 +8,15 @@ Incorporate configuration settings to the application.
 
 > Hide or show completed items in the list.
 
+[pull request](https://github.com/amroalbarham/todo-app/compare/context-settings%E2%80%99?expand=1)
+
 
 ## sandbox Link
 
+
+
 []()
+
 
 ## PR Link
 
@@ -21,3 +26,4 @@ Incorporate configuration settings to the application.
 ## UML
 
 ![uml](./lab31.png)
+
