@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { If, Else, Then } from 'react-if';
-import { AuthContext } from './context/auth';
+import {AuthContext} from './context/auth';
 import ListProvider from './context/listContext';
 import SettingsProvider from './context/settingsContext';
 import ToDo from './components/todo/todo.js';
@@ -30,14 +30,14 @@ const DeleteLink = () => {
   );
 };
 
-const App = () => {
-  const contextType = useContext(AuthContext);
-
-  return (
-    <>
-      <NavBar />
-      <If condition={contextType.loggedIn}>
-        <Then>
+const App = ()=> {
+  const contextType  = useContext(AuthContext);
+ 
+    return (
+      <>
+        <NavBar />    
+        <If condition={contextType.loggedIn}>
+          <Then>
           <Router>
             <Header />
             <Switch>
@@ -49,21 +49,21 @@ const App = () => {
                     <EditLink />
                     <DeleteLink />
                     <ToDo />
-                  </Route>
-                  <Route exact path='/settings'>
+                    </Route>
+                    <Route exact path='/settings'>
                     <SettingsForm />
                   </Route>
-                </ListProvider>
+                </ListProvider>]
               </SettingsProvider>
             </Switch>
-          </Router>
-        </Then>
-        <Else>
-          <div></div>
-        </Else>
-      </If>
-    </>
-  );
+          </Router> 
+          </Then>
+          <Else>
+            <div></div>
+          </Else>
+        </If>     
+      </>
+    );
 }
 
 
