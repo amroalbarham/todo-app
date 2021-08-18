@@ -21,7 +21,7 @@ Incorporate configuration settings to the application.
 ## PR Link
 
 
-[https://github.com/amroalbarham/todo-app/pull/5/](https://github.com/amroalbarham/todo-app/pull/5/)
+[https://github.com/amroalbarham/todo-app/pull/6](https://github.com/amroalbarham/todo-app/pull/6)
 
 ## UML
 
