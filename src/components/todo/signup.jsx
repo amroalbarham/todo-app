@@ -36,20 +36,20 @@ const SignUp = () => {
 				<div></div>
 			</Then>
 			<Else>
-				
-				<form onSubmit={handleSubmitSignup} style={{marginLeft :'16%'}}>
-					<input	type="email" name="email" placeholder="Enter Email" onChange={handleChangeEmail}
-					  style={{borderRadius :'50px' , width:'25%'}}/>
-					<input type="text" name="username" placeholder="Enter Username" onChange={changeUsername}
-					 style={{borderRadius :'50px' , width:'20%'}}/>
-					<input type="password"	name="password" placeholder="Enter password" onChange={changePassword}  style={{borderRadius :'50px' , width:'20%'}}/>
 
-					<select name="roles" id="roles" onChange={handleChangeRole}  style={{borderRadius :'50px' , height:'40px'}}>
+				<form onSubmit={handleSubmitSignup} style={{ marginLeft: '16%' }}>
+					{/* <input type="email" name="email" placeholder="Enter Email" onChange={handleChangeEmail}
+						style={{ borderRadius: '50px', width: '25%' }} /> */}
+					<input type="text" name="username" placeholder="Enter Username" onChange={changeUsername}
+						style={{ borderRadius: '50px', width: '20%' }} />
+					<input type="password" name="password" placeholder="Enter password" onChange={changePassword} style={{ borderRadius: '50px', width: '20%' }} />
+
+					<select name="roles" id="roles" onChange={handleChangeRole} style={{ borderRadius: '50px', height: '40px' }}>
 						<option value="user">user</option>
 						<option value="editor" >editor</option> <option value="admin">admin</option>
 					</select>
 
-					<button style={{borderRadius :'50px',width:'12%',height:'40px'  }}>SignUp</button>
+					<button style={{ borderRadius: '50px', width: '12%', height: '40px' }}>SignUp</button>
 				</form>
 			</Else>
 		</If>
